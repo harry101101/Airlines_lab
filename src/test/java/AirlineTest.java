@@ -17,8 +17,8 @@ public class AirlineTest {
 
     @Test
     public void test_canAddNewFlightsToArrayList() {
-        Flight flightToSpain = new Flight("Mallorca", 234);
-        Flight flightToPortugal = new Flight("Lisbon", 333);
+        Flight flightToSpain = new Flight("Mallorca");
+        Flight flightToPortugal = new Flight("Lisbon");
         airline.addNewFlight(flightToSpain);
         airline.addNewFlight(flightToPortugal);
         int expected = 2;
@@ -29,11 +29,11 @@ public class AirlineTest {
 
     @Test
     public void test_cancelFlight_removes_FlightsFromArrayList() {
-        Flight flightToSpain = new Flight("Mallorca", 234);
-        Flight flightToPortugal = new Flight("Lisbon", 333);
-        Flight flightToScotland = new Flight("Edinburgh", 546);
-        Flight flightToAlgeria = new Flight("Algiers", 444);
-        Flight flightToQatar = new Flight("Doha", 3433);
+        Flight flightToSpain = new Flight("Mallorca");
+        Flight flightToPortugal = new Flight("Lisbon");
+        Flight flightToScotland = new Flight("Edinburgh");
+        Flight flightToAlgeria = new Flight("Algiers");
+        Flight flightToQatar = new Flight("Doha");
         airline.addNewFlight(flightToSpain);
         airline.addNewFlight(flightToPortugal);
         airline.addNewFlight(flightToScotland);
@@ -48,7 +48,7 @@ public class AirlineTest {
 
     @Test
     public void test_canBookPassengers_onto_Flight() {
-        Flight flightToSpain = new Flight("Mallorca", 234);
+        Flight flightToSpain = new Flight("Mallorca");
         Passenger nadia = new Passenger("Nadia", "nadia.djeridi@BNTA.com");
         Passenger harry = new Passenger("Harry", "harry.xyz@BNTA.com");
         airline.addNewFlight(flightToSpain);
@@ -63,11 +63,11 @@ public class AirlineTest {
 
     @Test
     public void test_display_of_all_flights(){
-        Flight flightToSpain = new Flight("Mallorca", 234);
-        Flight flightToPortugal = new Flight("Lisbon", 333);
-        Flight flightToScotland = new Flight("Edinburgh", 546);
-        Flight flightToAlgeria = new Flight("Algiers", 444);
-        Flight flightToQatar = new Flight("Doha", 3433);
+        Flight flightToSpain = new Flight("Mallorca");
+        Flight flightToPortugal = new Flight("Lisbon");
+        Flight flightToScotland = new Flight("Edinburgh");
+        Flight flightToAlgeria = new Flight("Algiers");
+        Flight flightToQatar = new Flight("Doha");
         airline.addNewFlight(flightToSpain);
         airline.addNewFlight(flightToPortugal);
         airline.addNewFlight(flightToScotland);
